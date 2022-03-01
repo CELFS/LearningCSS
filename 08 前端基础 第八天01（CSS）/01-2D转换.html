@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            margin: 0 auto;
+            margin-top: 200px;
+            transform-origin: bottom left;
+            transition: all 1s;
+            animation: move 5s linear forwards;
+            cursor: wait;
+        }
+        
+        div:hover {
+            /* transform: translateX(200px); */
+            /* transform: rotate(45deg); */
+            /* transform: translateX(200px) rotate(45deg) scale(200%); */
+            /* transform: scale(200%); */
+        }
+        
+        @keyframes move {
+            0% {}
+            25% {
+                transform: translateX(200px);
+            }
+            50% {
+                transform: rotate(45deg);
+            }
+            100% {
+                transform: scale(200%);
+                cursor: default;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
